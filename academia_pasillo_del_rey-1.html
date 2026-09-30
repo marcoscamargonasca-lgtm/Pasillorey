@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia de Ajedrez Pasillo del Rey</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b1020;color:#f5f5f5;line-height:1.6}
+header{position:sticky;top:0;z-index:10;background:#111936ee;backdrop-filter:blur(8px);border-bottom:1px solid #303a63}
+nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{font-weight:800;font-size:20px;color:#f4c95d}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
+nav a:hover{color:#f4c95d}
+.hero{min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 20px;background:radial-gradient(circle at top,#273768,#0b1020 65%)}
+.hero .box{max-width:850px}
+.badge{display:inline-block;padding:7px 13px;border:1px solid #f4c95d;border-radius:30px;color:#f4c95d;margin-bottom:18px}
+h1{font-size:clamp(38px,7vw,72px);line-height:1.05;margin-bottom:20px}
+.hero p{font-size:19px;color:#cbd2e9;max-width:700px;margin:0 auto 30px}
+.btn{display:inline-block;padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:700;margin:5px}
+.primary{background:#f4c95d;color:#171717}
+.secondary{border:1px solid #66719b;color:#fff}
+section{max-width:1100px;margin:auto;padding:75px 20px}
+.title{text-align:center;margin-bottom:40px}
+.title h2{font-size:34px;margin-bottom:8px}
+.title p{color:#aeb7d3}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#151d3a;border:1px solid #303a63;border-radius:16px;padding:25px}
+.card h3{color:#f4c95d;margin-bottom:10px}
+.icon{font-size:35px;margin-bottom:12px}
+.event{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.date{background:#222c50;padding:12px;border-radius:12px;text-align:center;min-width:75px}
+.date strong{display:block;font-size:22px;color:#f4c95d}
+.contact{background:#151d3a;border-radius:20px;padding:35px;text-align:center;border:1px solid #303a63}
+footer{text-align:center;padding:30px;color:#9ca6c4;border-top:1px solid #303a63}
+@media(max-width:750px){nav{flex-direction:column;gap:10px}nav a{margin:0 6px}.grid{grid-template-columns:1fr}.event{flex-direction:column;align-items:flex-start}.hero{min-height:70vh}}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">♟ PASILLO DEL REY</div>
+<div>
+<a href="#inicio">Inicio</a>
+<a href="#academia">Academia</a>
+<a href="#clases">Clases</a>
+<a href="#torneos">Torneos</a>
+<a href="#contacto">Contacto</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="box">
+<span class="badge">♟ Ajedrez • Disciplina • Estrategia</span>
+<h1>Academia de Ajedrez<br>Pasillo del Rey</h1>
+<p>Formamos ajedrecistas mediante entrenamiento, disciplina y pasión por el deporte ciencia. ¡Aprende, compite y mejora tu juego!</p>
+<a class="btn primary" href="https://wa.me/51901148187" target="_blank">📲 Inscribirme por WhatsApp</a>
+<a class="btn secondary" href="#torneos">🏆 Ver torneos</a>
+</div>
+</section>
+
+<section id="academia">
+<div class="title"><h2>Sobre nuestra academia</h2><p>Un espacio para aprender y disfrutar del ajedrez.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">♟️</div><h3>Formación</h3><p>Clases orientadas a jugadores desde nivel inicial hasta niveles más avanzados.</p></div>
+<div class="card"><div class="icon">🧠</div><h3>Estrategia</h3><p>Trabajamos táctica, cálculo, aperturas, finales y pensamiento estratégico.</p></div>
+<div class="card"><div class="icon">🏆</div><h3>Competencia</h3><p>Organizamos torneos y actividades para poner en práctica lo aprendido.</p></div>
+</div>
+</section>
+
+<section id="clases">
+<div class="title"><h2>Clases de ajedrez</h2><p>Entrenamiento para diferentes niveles.</p></div>
+<div class="grid">
+<div class="card"><h3>♙ Nivel Inicial</h3><p>Movimiento de piezas, reglas, jaque, jaque mate y primeros conceptos.</p></div>
+<div class="card"><h3>♞ Nivel Intermedio</h3><p>Tácticas, aperturas, planes de juego, cálculo y análisis de partidas.</p></div>
+<div class="card"><h3>♛ Preparación competitiva</h3><p>Entrenamiento enfocado en torneos, análisis y preparación de partidas.</p></div>
+</div>
+</section>
+
+<section id="torneos">
+<div class="title"><h2>Próximos torneos</h2><p>Participa y demuestra tu talento.</p></div>
+<div class="card event">
+<div><h3>Torneo de Ajedrez Pasillo del Rey</h3><p>Consulta por próximas fechas, modalidades, categorías y premios.</p></div>
+<div class="date"><strong>♟</strong>2026</div>
+</div>
+</section>
+
+<section>
+<div class="title"><h2>¿Por qué aprender ajedrez?</h2></div>
+<div class="grid">
+<div class="card"><h3>Concentración</h3><p>Desarrolla la capacidad de analizar posiciones y mantener la atención.</p></div>
+<div class="card"><h3>Razonamiento</h3><p>Practica la toma de decisiones y la planificación de jugadas.</p></div>
+<div class="card"><h3>Disciplina</h3><p>Aprende a estudiar, analizar errores y mejorar progresivamente.</p></div>
+</div>
+</section>
+
+<section id="contacto">
+<div class="contact">
+<h2>¡Únete a Pasillo del Rey! ♟️</h2>
+<p style="margin:15px 0 25px;color:#cbd2e9">Solicita información sobre clases, horarios y próximos torneos.</p>
+<p><strong>📞 901 148 187</strong> &nbsp; | &nbsp; <strong>📞 926 291 606</strong></p>
+<p style="margin-top:8px">📍 Ica • Nasca</p>
+<a class="btn primary" href="https://wa.me/51901148187" target="_blank">WhatsApp</a>
+<a class="btn secondary" href="tel:+51901148187">Llamar</a>
+</div>
+</section>
+</main>
+
+<footer>
+<p>© 2026 Academia de Ajedrez Pasillo del Rey</p>
+<p>♟️ Pasión por el ajedrez, formación para el futuro.</p>
+</footer>
+</body>
+</html>
