@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pasillo del Rey | Academia de Ajedrez</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#inicio">♔ <span><b>Pasillo del Rey</b><small>Academia de Ajedrez</small></span></a>
+<button id="menuBtn" class="menu">☰</button>
+<nav id="nav"><a href="#inicio">Inicio</a><a href="#clases">Clases</a><a href="#inscripcion">Inscripción</a><a href="#admin">Administración</a><a href="#contacto">Contacto</a></nav>
+</div></header>
+
+<section id="inicio" class="hero"><div class="container hero-grid">
+<div><p class="eyebrow">ACADEMIA DE AJEDREZ</p><h1>Piensa. Entrena.<br><span>Conquista el tablero.</span></h1>
+<p>Aprende, mejora y compite con Pasillo del Rey.</p>
+<a class="btn gold" href="#inscripcion">Inscribirme</a></div>
+<div class="board" id="board"></div>
+</div></section>
+
+<section id="clases" class="section"><div class="container"><p class="eyebrow">PROGRAMAS</p><h2>Clases para cada nivel</h2>
+<div class="cards"><article><b>♙</b><h3>Inicial</h3><p>Fundamentos y reglas.</p></article><article><b>♘</b><h3>Intermedio</h3><p>Táctica, estrategia y análisis.</p></article><article><b>♕</b><h3>Competitivo</h3><p>Preparación para torneos.</p></article></div></div></section>
+
+<section id="inscripcion" class="section cream"><div class="container two"><div>
+<p class="eyebrow">INSCRIPCIÓN</p><h2>Registra al alumno</h2>
+<p>El pago será confirmado manualmente por la academia. Después podrás activar la membresía desde el panel.</p>
+<div class="steps"><span>1. Inscripción</span><span>2. Confirmación del pago</span><span>3. Membresía activa</span><span>4. Avisos de vencimiento</span></div>
+</div>
+<form id="registrationForm" class="form">
+<input name="nombre" placeholder="Nombres y apellidos" required>
+<input name="dni" placeholder="DNI" maxlength="8" required>
+<input name="telefono" placeholder="WhatsApp (ej. 51901148187)" required>
+<input name="correo" type="email" placeholder="Correo electrónico" required>
+<select name="nivel" required><option value="">Nivel</option><option>Inicial</option><option>Intermedio</option><option>Competitivo</option></select>
+<select name="plan" required><option value="">Membresía</option><option value="Mensual">Mensual</option><option value="Trimestral">Trimestral</option></select>
+<button class="btn gold" type="submit">Enviar inscripción</button><p id="regMsg"></p>
+</form></div></section>
+
+<section id="admin" class="section dark"><div class="container">
+<p class="eyebrow">PANEL DE PRUEBA</p><h2>Administración de alumnos</h2>
+<p class="muted">Esta versión usa almacenamiento local para probar el flujo. Luego conectaremos Supabase para hacerlo real.</p>
+<div class="admin-bar"><button id="refresh" class="btn">Actualizar</button><button id="clear" class="btn danger">Borrar datos de prueba</button></div>
+<div id="students"></div>
+</div></section>
+
+<section id="contacto" class="section"><div class="container contact"><div><p class="eyebrow">CONTACTO</p><h2>Pasillo del Rey</h2><p>WhatsApp / llamadas: <b>901 148 187 · 926 291 606</b></p></div><div class="contact-box">♔<br><small>Academia de Ajedrez</small></div></div></section>
+<footer><div class="container">© 2026 Academia de Ajedrez Pasillo del Rey</div></footer>
+<script src="script.js"></script>
+</body></html>
